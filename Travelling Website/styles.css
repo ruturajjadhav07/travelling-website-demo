@@ -1,0 +1,422 @@
+/* index css */
+html{
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+nav {
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 100px;
+    background-image: linear-gradient(#033747, #012735);
+    position: fixed;
+    display: block;
+    /* transition: top 0.3s; */
+}
+
+nav div.logo {
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0px 16px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+.animated-img {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 3s;
+
+
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes animate {
+    0% {
+        background-image: url(img/img2.jpg);
+    }
+
+    20% {
+        background-image: url(img/img3.jpg);
+    }
+
+    40% {
+        background-image: url(img/img4.jpg);
+    }
+
+    60% {
+        background-image: url(img/img5.jpg);
+    }
+
+    80% {
+        background-image: url(img/img6.jpg);
+    }
+
+    100% {
+        background-image: url(img/img7.jpg);
+    }
+}
+
+.searchbar {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    opacity: 1;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.captionh1 {
+    color: #FFFF;
+    margin-bottom: 50PX;
+    font-size: 40PX;
+    letter-spacing: 2px;
+    text-align: center;
+    font-style: italic;
+}
+
+.h1 {
+    color: #FFFF;
+    margin-bottom: 50PX;
+    font-size: 40PX;
+    letter-spacing: 2px;
+    text-align: center;
+    font-style: italic;
+}
+
+#search {
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    width: 560px;
+}
+
+.button {
+    margin-left: -4px;
+    padding-bottom: 0px;
+    height: 40px;
+    width: 150px;
+    background: yellow;
+    color: #000;
+    border-radius: 25px;
+}
+
+.serach {
+    background: rgba(0, 0, 0, 5);
+    padding: 30px;
+}
+
+
+/* Gallery css */
+
+.galleryh1 {
+    text-transform: uppercase;
+    margin-left: 10px;
+    border-bottom: 2px solid red;
+    width: 30%;
+    margin-left: calc(10%/6);
+    padding-top: 20px;
+}
+
+/* .galleryhr{
+color: red;
+margin-left: 10px;
+} */
+
+.s1 {
+    margin-left: calc(10%/6);
+    border-radius: 10%;
+}
+
+.s1:hover {
+    cursor: pointer;
+}
+
+.france {
+    width: 30%;
+    height: 42.3vh;
+    margin: 20px;
+    border-radius: 10%;
+
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    /* -webkit-transition: all 1s ease; */
+}
+
+.usa {
+    width: 30%;
+    height: 42.3vh;
+    margin: 20px;
+    border-radius: 10%;
+
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    /* -webkit-transition: all 1s ease; */
+}
+
+.greece {
+    width: 30%;
+    height: 42.3vh;
+    margin: 20px;
+    border-radius: 10%;
+
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    /* -webkit-transition: all 1s ease; */
+}
+
+.india {
+    width: 30%;
+    height: 42.3vh;
+    margin: 20px;
+    border-radius: 10%;
+
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    /* -webkit-transition: all 1s ease; */
+}
+
+.paris {
+    width: 30%;
+    height: 42.3vh;
+    margin: 20px;
+    border-radius: 10%;
+
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    /* -webkit-transition: all 1s ease; */
+}
+
+.rome {
+    width: 30%;
+    height: 42.3vh;
+    margin: 20px;
+    border-radius: 10%;
+
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    /* -webkit-transition: all 1s ease; */
+}
+
+.france:hover {
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+}
+
+.usa:hover {
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+}
+
+.greece:hover {
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+}
+
+.india:hover {
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+}
+
+.paris:hover {
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+}
+
+.rome:hover {
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+}
+
+/* about css */
+
+.about {
+    padding: 100px;
+    background-size: cover;
+}
+
+.abouth1 {
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.abouth12 {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.abouthr {
+    text-align: center;
+    margin-right: 500px;
+    margin-left: 500px;
+}
+
+.abouthr1 {
+    text-align: center;
+    margin-left: 600px;
+    margin-right: 600px;
+}
+
+.aboutpara {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    color: navy;
+    padding: 20px;
+}
+
+.aboutpara1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 150px;
+    margin-right: 150px;
+    letter-spacing: 1.5px;
+    color: navy;
+    font-style: italic;
+    padding: 20px;
+}
+
+
+
+
+/* Contact */
+
+.contact {
+    padding-left: calc(100%/2);
+    padding-top: 330px;
+}
+
+.contact-box {
+    margin: 0px;
+    padding: 10px;
+    width: 440px;
+    background-color: white;
+    box-shadow: 0 0 20px 0 #999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* position: absolute; */
+}
+
+.form {
+    margin: 35px;
+}
+
+#input {
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid#777;
+    border-radius: 14px;
+    outline: none;
+}
+
+.textarea {
+    height: 150px;
+    padding-top: 10px;
+}
+
+.button {
+    border-radius: 20px;
+    color: white;
+    margin-top: 18px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: green;
+}
+
+h2 {
+    text-align: center;
+    color: navy;
+}
+
+
+.footer {
+    padding-left: 600px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-style: italic;
+    color: navy;
+}
+
+
+hr {
+    padding-top: 15px;
+}
+
+.hr {
+    padding-bottom: 15px;
+}
